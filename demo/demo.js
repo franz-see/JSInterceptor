@@ -16,13 +16,13 @@ function beforeInterceptor (object, method, args) {
     });
 }
 
-function afterInterceptor (object, method, returnValue, exception, args) {
+function afterInterceptor (object, method, args, returnValue, exception) {
   console.log({
     'object' : object,
     'method' : method,
+    'args' : args,
     'returnValue' : returnValue,
-    'exception' : exception,
-    'args' : args
+    'exception' : exception
     });
 
 }
