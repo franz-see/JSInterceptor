@@ -19,7 +19,7 @@ jsi.InterceptorUtil = function() {
       } catch(ex) {
           exception = ex;
       }
-      afterFunc(object, method, returnValue, exception, arguments);
+      afterFunc(object, method, arguments, returnValue, exception);
       
       if (exception) {
         throw exception;
